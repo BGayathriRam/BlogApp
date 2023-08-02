@@ -1,0 +1,691 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+  <section id="section1">
+    <nav class="navbar navbar-expand-lg bg-body-transparent">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="productsDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="index.html">New blog</a></li>
+                <li><a class="dropdown-item" href="index.html">Updates</a></li>
+                <li><a class="dropdown-item" href="index.html">Themes</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="index.html" id="resourcesDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Resources
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                <li><a class="dropdown-item" href="index.html">Popular topics</a></li>
+                <li><a class="dropdown-item" href="index.html">More liked</a></li>
+                <li><a class="dropdown-item" href="index.html">Currently featured</a></li>
+              </ul>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="index.html">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="btns">
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px;"><a href="login/login.html" style="color: rgb(255, 255, 255); text-decoration: none;">Login</a></button>
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px;"><a href="signup/signup.html" style="color: rgb(255, 255, 255); text-decoration: none;">SignUp</a></button>
+          <button type="submit" class="btn btn-dark" style="border-radius: 20px;"><a href="/pp/notifications.html"style="color: rgb(255, 255, 255); text-decoration: none;">Notifications</a></button>
+          <!-- <button type="submit" class="update" class="btn btn-check" style="border-radius: 20px; ">Updates</button> -->
+        </div>
+      </div>
+    </nav><br>
+    <!-- ============================================ Search Bar ======================================= -->
+    <center><h1 class="heading"style="font-weight: bold;">Creators Corner..!!</h1></center>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <p id="title" class="fs-2"><strong>Elevate your experiences!</strong></p>
+          <div class="input-field">
+            <input type="search" id="searchInput" placeholder="Search for something (eg:London bridge)">
+            <button class="btn btn-dark" id="searchButton">Search </button>
+            <ul id="searchSuggestions"></ul>
+          </div>
+        </div>
+        <div class="col">
+          <p class="fs-4">A fusion of food,travel,fashion,fitness,tech,
+            gaming,sports,movies and many more updates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ================================================Tab Names============================================ -->
+  <section>
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active cato1" data-bs-toggle="pill" href="#tab1">View all</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab2">Designs</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab3">Tech</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab4">Travel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab5">Food</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab6">Fitness</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab7">Fashion</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab8">Gaming</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab9">Cars</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab10">Sports</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab11">Movies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link cato1" data-bs-toggle="pill" href="#tab12">Management</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container mt-5" id="tabContentContainer">
+
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+      <!-- =======================================Card elements================================= -->
+        </div>
+        <!-- =============================== design =================================== -->
+        <div class="tab-pane" id="tab2">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/peakpx.jpg" class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Peter Parker</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">19 Dec 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">UX review presentation</h4>
+                  <p class="card-text">A UX review is an evaluation process that assesses the user experience of a product or website, focusing on aspects like usability, accessibility, design, and overall user satisfaction. 
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="./assets/img/Screenshot 2023-07-30 at 12.27.03 PM.png" style="height: 338.8px; width:600px;"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Jonathan Ive</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">29 Dec 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Design</h4>
+                  <p class="card-text">Design is the process of intentionally crafting solutions to problems, combining creativity, functionality, and aesthetics to achieve effective and appealing outcomes.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ========================================== Tech ======================================-->
+        <div class="tab-pane" id="tab3">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/macbook.jpg" style="width:600px; height:390px;" 
+                      class="card-img-top img-fluid" alt="Image" style="height: 390px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Apple</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">20 Sep 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Macbook Pro</h4>
+                  <p class="card-text">Macbook pro with its sleek design, Touch Bar, and macOS operating system, 
+                    the MacBook Pro offers a seamless and productive user experience.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img src="assets/img/peakpx (2).jpg"
+                      class="card-img-top img-fluid" alt="Image" style="height: 390px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Apple Org</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">14 Apr 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Headphones</h4>
+                  <p class="card-text">The integration of Apple's H1 chip enables seamless pairing, hands-free "Hey Siri" commands,
+                     and extended battery life,making popular choice among Apple users.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ===========================================travel========================================= -->
+
+        <div class="tab-pane" id="tab4">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/peakpx (3).jpg" style="height: 450.8px; width:600px"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Emilia Clarke</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">30 Jan 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">London Bridge</h4>
+                  <p class="card-text">London Bridge is a historic and iconic structure spanning the River Thames in Central London, England.
+                    Must visit atleast once in a lifetime..!!!
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/spaceneedletower.jpg" style="height: 451px;"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Isobel Stevens</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 Apr 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Space Needle</h4>
+                  <p class="card-text">The Space Needle is an iconic landmark located in Seattle, Washington, USA.
+                    It's futuristic aesthetics make it a popular tourist attraction.
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- =========================================== food ============================================= -->
+        <div class="tab-pane" id="tab5">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/peakpx (4).jpg" style="height: 376.5px;"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Alex Karev</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">2 Nov 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Burger</h4>
+                  <p class="card-text">Oh, the burger, a culinary masterpiece that delights the senses! With each juicy bite of its perfectly cooked patty,
+                    I'm transported to flavor paradise.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/peakpx (5).jpg" style="height: 376.5px; width: 600px;"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">George O'melley</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">14 June 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Pizza</h4>
+                  <p class="card-text">Its irresistible combination of textures and tastes, from gooey cheese to tangy sauce, 
+                    makes it a universally adored comfort food enjoyed worldwide.  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ==================================================fitness=============================================== -->
+        <div class="tab-pane" id="tab6">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/peakpx (7).jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Tessa Young</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">2 Mar 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Yoga</h4>
+                  <p class="card-text">Yoga is a holistic fitness practice that combines physical postures, breath control, and meditation to improve flexibility, strength, and balance.
+
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="assets/img/peakpx (6).jpg" style="height: 376.3px;"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Hardin Scott</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">29 Dec 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Gym</h4>
+                  <p class="card-text">Gyms are dedicated fitness facilities equipped with a variety of exercise machines, 
+                    free weights, and fitness classes to support diverse workout routines. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- ================================================= Fashion =============================================-->
+        <div class="tab-pane" id="tab7">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (8).jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Marc Jacobs</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">29 Dec 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Daisy</h4>
+                  <p class="card-text">These perfumes are known for their fresh, youthful, and playful character, often featuring notes of strawberry,
+                    violet, gardenia, and jasmine, evoking a sense of femininity and innocence.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (9).jpg" style="height: 376px;"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Raynald Aeschlimann</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 Jan 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Omega Watch</h4>
+                  <p class="card-text">With iconic collections like the Seamaster, Speedmaster, and Constellation, Omega continues to be a symbol of sophistication and 
+                    prestige, admired by watch enthusiasts and collectors worldwide. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--=========================================== Gaming ============================================-->
+        
+        <div class="tab-pane" id="tab8">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (16).jpg" style="height: 401.9px; width:800px"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Levinho</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">11 Aug 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">PUBG</h4>
+                  <p class="card-text">PUBG (PlayerUnknown's Battlegrounds) is a popular battle royale game that drops players onto an expansive map, where they must scavenge for weapons 
+                    and gear while outwitting opponents to be the last one standing.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (11).jpg"
+                      class="card-img-top img-fluid" alt="Image" style="height: 402px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Lewis Hamilton</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">13 May 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Formula1</h4>
+                  <p class="card-text">Featuring authentic tracks, teams, and drivers from the official FIA Formula One World Championship, the game offers an unparalleled level of accuracy and attention to detail.
+
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>         
+        <!-- ============================================= Cars ==============================================-->
+
+        <div class="tab-pane" id="tab9">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (17).jpg" style="height: 376.5px; width:600px"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Stephan Winkelmann</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">17 Oct 2021</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Lamborghini</h4>
+                  <p class="card-text">The Black Lamborghini is an eye-catching and distinctive luxury car known for 
+                    its striking appearance and high-performance capabilities.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (13).jpg"
+                      class="card-img-top img-fluid" alt="Image" style="height: 376.5px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Zak Brown</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 June 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">McLaren</h4>
+                  <p class="card-text">With legacy of excellence & innovation, McLaren has produced iconic road cars like the McLaren F1, 
+                    & cutting-edge supercars such as the McLaren 720S and 765LT. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!--================================================= sports =============================================-->
+        <div class="tab-pane" id="tab10">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/virat.jpg"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">ICC</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">16 Jan 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Cricket</h4>
+                  <p class="card-text">As the former captain of the Indian cricket team, Kohli's leadership on and off the field has inspired a generation of aspiring athletes and fans alike.
+
+                    His aggressive playing style and hunger for success have earned him numerous accolades and a reputation as one of the finest batsmen in the world.
+                    
+                    </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/Ronaldo.jpg"
+                      class="card-img-top img-fluid" alt="Image" style="height:351.5px; width: 600px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">FIFA</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 June 2022</p>
+                    </div>
+                  </div>
+                  <br>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Football</h4>
+                  <p class="card-text">Unyielding dedication and commitment to excellence paved the path for Ronaldo's resounding success.
+                    As a football legend, Ronaldo's story of success inspires millions worldwide to chase their dreams with unbridled passion and determination.
+                    Ronaldo's success is a testament to his unwavering pursuit of greatness.
+
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--============================================== Movies ===============================================-->
+        <div class="tab-pane" id="tab11">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/HP.jpg" style="height: 402px; width:800px"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Shonda Rhimes</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">19 Feb 2019</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Harry Potter</h4>
+                  <p class="card-text">The Harry Potter film series received multiple Academy Award nominations in various categories, 
+                    including Best Art Direction, Best Visual Effects, and Best Original Score.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="./assets/img/peakpx (15).jpg"
+                      class="card-img-top img-fluid" alt="Image" style="height: 402px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Kinsey Locke</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">24 Apr 2020</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Locke and Key</h4>
+                  <p class="card-text">Unlock a world of mystery and magic with "Locke & Key," 
+                    the thrilling TV series based on the acclaimed graphic novel. "Locke & Key" is a must-watch series that will 
+                    leave you craving for more! 
+
+                  </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      <!--============================================= Management ==============================================-->
+        <div class="tab-pane" id="tab12">
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-4">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="https://img.freepik.com/free-photo/guy-shows-document-girl-group-young-freelancers-office-have-conversation-working_146671-13569.jpg?w=900&t=st=1688935352~exp=1688935952~hmac=a33df4cdee82a6eac7e1f8a116fb5f6c65637c0174ec95776dffd22e5807da97"
+                      class="card-img-top img-fluid" alt="Image">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Derek Shepherd</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 Apr 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;"> Team Management</h4>
+                  <p class="card-text">Effective team management involves clear communication, fostering a 
+                    collaborative environment, and leveraging individual strengths to achieve shared goals.</p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="image-container">
+                    <img
+                      src="https://img.freepik.com/premium-photo/business-place-be-shot-businesspeople-having-meeting-office_590464-7815.jpg?w=900"
+                      class="card-img-top img-fluid" alt="Image" style="height: 402px;">
+                    <div class="image-caption">
+                      <p class="mt fs-6 caption-name" style="font-weight:bold;">Meredith Grey</p>
+                      <p class="fs-6 caption-date" style="font-weight:bold;">12 June 2022</p>
+                    </div>
+                  </div>
+                  <h4 class="card-title mt-3" style="text-decoration: underline;">Business Management</h4>
+                  <p class="card-text">Business management encompasses strategic planning, decision-making, financial management, and leadership to drive growth 
+                    and success while adapting to a constantly changing business landscape. </p>
+                  <a href="#" class="btn btn-primary" id="read-more-1">Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <!-- ================Modal=============== -->
+    <div class="modal" id="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- ================Modal header================== -->
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-title"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <!--================= Modal body================== -->
+          <div class="modal-body">
+            <p id="modal-date"></p>
+            <h5 id="modal-name"></h5>
+            <p id="modal-description"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section>
+    <!--============================================= Footer =============================================-->
+    <br><footer id="mainFooter" class="py-5 bg-dark text-white">
+      <div class="container py-md-5">
+        <div class="row justify-content-between align-items-center gy-3">
+          <div class="col-sm-12 col-md-6 text-center text-md-start mb-3">
+            <p>&copy; 2023 Batch9. All rights reserved.</p>
+          </div>
+          <div class="col-sm-12 col-md-6 text-center text-md-end">
+            <!-- Content for the right side of the footer -->
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="pp/terms.html" style="text-decoration: none;">Terms of Service</a></li>
+              <li class="list-inline-item"><a href="pp/pp.html" style="text-decoration: none;">Privacy Policy</a></li>
+              <li class="list-inline-item"><a href="pp/contact.html" style="text-decoration: none;">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </section>
+
+  <!-- ============================================Script================================================ -->
+
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
