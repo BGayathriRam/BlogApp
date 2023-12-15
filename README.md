@@ -1,2 +1,2 @@
 # BlogApp
-Batch 9
+Internship
